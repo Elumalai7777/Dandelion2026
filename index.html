@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dandelion 2026 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+            /* BACKGROUND IMAGE */
+            background-image: url("https://th.bing.com/th/id/OIP.jLP2DItSpLNJ_mkKreIiggHaE8?w=254&h=180&c=7&r=0&o=7&cb=defcachec2&dpr=1.3&pid=1.7&rm=3");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* dark overlay so text readable */
+        
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+        }
+        
+        .hero .container {
+            position: relative;
+            z-index: 1;
+        }
+        /* Navbar brand logo sizing */
+        
+        .navbar-brand svg {
+            height: 36px;
+            width: 36px;
+        }
+        
+        .navbar-brand .brand-text {
+            margin-left: 8px;
+            font-weight: 700;
+            color: inherit;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo">
+                    <svg viewBox="0 0 200 200" width="60" height="60">
+    
+    <!-- left leaves -->
+    <path d="M55 140 C30 120, 30 80, 55 60 
+             M55 140 C40 120, 40 80, 55 60
+             M55 140 C50 120, 50 80, 55 60"
+          stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- right leaves -->
+    <path d="M145 140 C170 120, 170 80, 145 60
+             M145 140 C160 120, 160 80, 145 60
+             M145 140 C150 120, 150 80, 145 60"
+          stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- flower -->
+    <g stroke="#FFD84D" stroke-width="6" stroke-linecap="round">
+        <line x1="100" y1="120" x2="100" y2="80"/>
+        <line x1="100" y1="120" x2="80" y2="90"/>
+        <line x1="100" y1="120" x2="120" y2="90"/>
+        <line x1="100" y1="120" x2="70" y2="105"/>
+        <line x1="100" y1="120" x2="130" y2="105"/>
+        <line x1="100" y1="120" x2="85" y2="80"/>
+        <line x1="100" y1="120" x2="115" y2="80"/>
+    </g>
+
+</svg>
+                </div>
+
+                <span class="brand-text">Dandelion 2026</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cultural.html">Cultural</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tech.html">Tech</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sports.html">Sports</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero text-center">
+        <div class=" container py-5 ">
+
+            <h1 class="display-2 fw-bold mb-4 animate__animated animate__fadeInDown ">
+                DANDELION 2026
+            </h1>
+            <p class="lead fs-3 mb-5 animate__animated animate__fadeInUp ">
+                Cultural • Tech • Sports | Chennai Campus | Feb 20-22
+            </p>
+            <div class="row g-4 justify-content-center ">
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <a href="cultural.html " class="btn btn-light btn-lg w-100 mb-3 shadow-lg ">
+                        <i class="fas fa-music me-2 "></i>Cultural
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <a href="tech.html " class="btn btn-light btn-lg w-100 mb-3 shadow-lg ">
+                        <i class="fas fa-laptop-code me-2 "></i>Tech
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 ">
+                    <a href="sports.html " class="btn btn-light btn-lg w-100 mb-3 shadow-lg ">
+                        <i class="fas fa-futbol me-2 "></i>Sports
+                    </a>
+                </div>
+            </div>
+            <p class="mt-4 fs-6 opacity-75 ">Over 20 Events • ₹50,000+ Prizes • 1000+ Participants</p>
+        </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="py-5 bg-gradient-primary ">
+        <div class="container text-center ">
+            <h2 class="text-white mb-4 ">⏰ Event Starts In</h2>
+            <div class="row g-3 justify-content-center ">
+                <div class="col-md-2 col-6 ">
+                    <div class="countdown-card bg-white rounded-4 p-4 shadow-lg mx-auto " style="max-width: 120px; ">
+                        <div class="h2 fw-bold text-primary mb-1 " id="days">00</div>
+                        <div class="small text-muted ">Days</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 ">
+                    <div class="countdown-card bg-white rounded-4 p-4 shadow-lg mx-auto " style="max-width: 120px; ">
+                        <div class="h2 fw-bold text-success mb-1 " id="hours">00</div>
+                        <div class="small text-muted ">Hours</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 ">
+                    <div class="countdown-card bg-white rounded-4 p-4 shadow-lg mx-auto " style="max-width: 120px; ">
+                        <div class="h2 fw-bold text-warning mb-1 " id="minutes">00</div>
+                        <div class="small text-muted ">Minutes</div>
+                    </div>
+                </div>
+                <div class="col-md-2 col-6 ">
+                    <div class="countdown-card bg-white rounded-4 p-4 shadow-lg mx-auto " style="max-width: 120px; ">
+                        <div class="h2 fw-bold text-danger mb-1 " id="seconds">00</div>
+                        <div class="small text-muted ">Seconds</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT TEASERS -->
+    <section class="py-5 bg-light ">
+        <div class="container ">
+            <h2 class="text-center mb-5 ">🏆 What Awaits You</h2>
+            <div class="row g-4 text-center ">
+                <div class="col-lg-4 col-md-6 ">
+                    <a href="cultural.html " class="text-decoration-none ">
+                        <div class="card h-100 p-5 border-0 shadow-lg hover-lift ">
+                            <i class="fas fa-drum fa-4x text-primary mb-4 "></i>
+                            <h3 class="h4 fw-bold mb-3 ">Cultural Fiesta</h3>
+                            <p class="text-muted mb-0 ">5 Events • Dance • Music • Drama • Fashion | <strong>₹15K Prizes</strong></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <a href="tech.html " class="text-decoration-none ">
+                        <div class="card h-100 p-5 border-0 shadow-lg hover-lift ">
+                            <i class="fas fa-robot fa-4x text-success mb-4 "></i>
+                            <h3 class="h4 fw-bold mb-3 ">Tech Summit</h3>
+                            <p class="text-muted mb-0 ">3 Events • Hackathon • Quiz • Coding | <strong>₹25K Prizes</strong></p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <a href="sports.html " class="text-decoration-none ">
+                        <div class="card h-100 p-5 border-0 shadow-lg hover-lift ">
+                            <i class="fas fa-medal fa-4x text-warning mb-4 "></i>
+                            <h3 class="h4 fw-bold mb-3 ">Sports Mania</h3>
+                            <p class="text-muted mb-0 ">6 Events • Cricket • Football • Athletics | <strong>Trophies + ₹20K</strong></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- main content -->
+    <div class="main-container  text-center py-5 ">
+        <div class="logo">
+            <img src="data:image/png;base64,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"
+                alt="Madha Logo ">
+
+        </div>
+        <div class="description">
+            <h1>Welcome to Madha Engineering College</h1>
+            <p>Madha Engineering College, established in 1998, is a premier institution located in Chennai, Tamil Nadu. It offers a wide range of undergraduate and postgraduate programs in engineering and technology. The college is committed to providing
+                quality education, fostering innovation, and promoting research among its students. With state-of-the-art facilities and experienced faculty, Madha Engineering College aims to nurture the talents of its students and prepare them for successful
+                careers in the engineering field.</p>
+            <p>Our college offers a unique blend of academic excellence and diverse campus life. With a commitment to providing top-quality education and a nurturing environment for personal and professional growth, we ensure that every student receives
+                the best experience possible. We are proud of our dedicated faculty, vibrant student body, and state-of-the-art facilities. From cutting-edge research opportunities to a wide variety of extracurricular activities, our college is a place
+                where you can thrive academically and socially. Join us and be part of a community that values knowledge, diversity, and personal growth.
+            </p>
+        </div>
+    </div>
+    <section class="sponsor-section">
+        <h2 class="text-center mb-4">Our Sponsors</h2>
+        <div class="container">
+            <div class="sponsor d-flex justify-content-around align-items-center">
+                <span> <img src="data:image/webp;base64,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"
+                    alt=""> 
+                
+                
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- <footer class="bg-dark text-white py-5 mt-5 ">>
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <h5><i class="fas fa-seedling me-2 text-warning "></i>Dandelion 2026</h5>
+                    <p class="mb-0 ">Chennai Campus Fest | Feb 20-22 | Cultural • Tech • Sports Excellence</p>
+                </div>
+                <div class="col-lg-3 ">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled ">
+                        <li><a href="cultural.html " class="text-white-50 ">Cultural Events</a></li>
+                        <li><a href="tech.html " class="text-white-50 ">Tech Events</a></li>
+                        <li><a href="sports.html " class="text-white-50 ">Sports Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 ">
+                    <h6>Contact</h6>
+                    <p class="mb-1 "><i class="fas fa-map-marker-alt me-2 "></i>Chennai Campus</p>
+                    <p class="mb-1 "><i class="fas fa-envelope me-2 "></i>events@college.edu</p>
+                    <p><i class="fas fa-phone me-2 "></i>+91 44-XXXX XXXX</p>
+                </div>
+            </div>
+            <hr class="my-4 ">
+            <div class="text-center ">
+                <p class="mb-0 ">&copy; 2026 Dandelion Fest. All Rights Reserved. | Made with ❤️ for Chennai Colleges</p>
+            </div>
+        </div>
+        </footer> -->
+    <!-- <footer class="bg-dark text-white py-5 mt-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <h5><i class="fas fa-seedling me-2 text-warning "></i>Dandelion 2026</h5>
+                    <p class="mb-0 ">Chennai Campus Fest | Feb 20-22 | Cultural • Tech • Sports Excellence</p>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled ">
+                        <li><a href="cultural.html " class="text-white-50 ">Cultural Events</a></li>
+                        <li><a href="tech.html " class="text-white-50 ">Tech Events</a></li>
+                        <li><a href="sports.html " class="text-white-50 ">Sports Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <h6>Contact</h6>
+                    <p class="mb-1 "><i class="fas fa-map-marker-alt me-2 "></i>Chennai Campus</p>
+                    <p class="mb-1 "><i class="fas fa-envelope me-2 "></i>events@college.edu</p>
+                    <p class="mb-2 "><i class="fas fa-phone me-2 "></i>+91 44-XXXX XXXX</p> -->
+
+    <!-- SOCIAL MEDIA ICONS -->
+    <!-- <div class="social-icons mt-3 ">
+                        <a href="https://instagram.com/YOURPAGE " target="_blank " class="social-icon instagram ">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="https://twitter.com/YOURPAGE " target="_blank " class="social-icon twitter ">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+
+                        <a href="https://linkedin.com/company/YOURPAGE " target="_blank " class="social-icon linkedin ">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 ">
+
+            <div class="text-center ">
+                <p class="mb-0 ">&copy; 2026 Dandelion Fest. All Rights Reserved. | Made with ❤️ for Chennai Colleges</p>
+            </div>
+        </div>
+    </footer> -->
+    <footer class="bg-dark text-white py-5 mt-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-lg-6 ">
+                    <h5><i class="fas fa-seedling me-2 text-warning "></i>Dandelion 2026</h5>
+                    <p class="mb-0 ">Chennai Campus Fest | Feb 20-22 | Cultural • Tech • Sports Excellence</p>
+                </div>
+
+                <div class="col-lg-5 ">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled ">
+                        <li><a href="cultural.html " class="text-white-50 text-decoration-none ">Cultural Events</a></li>
+                        <li><a href="tech.html " class="text-white-50 text-decoration-none ">Tech Events</a></li>
+                        <li><a href="sports.html " class="text-white-50 text-decoration-none ">Sports Events</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <h6>Contact</h6>
+                    <p class="mb-1">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        <a href="https://www.google.com/maps/search/?api=1&query=MADHA+ENGINEERING+COLLEGE+Kundrathur+Sriperumbudur+Rd+Madha+Nagar+Kundrathur+Chennai+Tamil+Nadu+600069" class="text-white" target="_blank">
+        Chennai Campus
+    </a>
+                    </p>
+
+                    <p class="mb-1 "><i class="fas fa-envelope me-2 "></i>
+                        <a href="
+https://www.madhaengineeringcollege.com" class="text-white">Madha Engineering College</a>
+                    </p>
+                    <p class="mb-2 "><i class="fas fa-phone me-2 "></i>+91 44-XXXX XXXX</p>
+
+                    <!-- SOCIAL MEDIA ICONS -->
+                    <div class="social-icons mt-3 ">
+                        <a href="https://www.bing.com/ck/a?!&&p=e2b9ffb7d4a3e1f76cce94352492f394294ab2658a37b73bd5ae5dec8ef75098JmltdHM9MTc3MTExMzYwMA&ptn=3&ver=2&hsh=4&fclid=1d2d8576-9702-6e2c-3885-933c96606f25&psq=m%2cadha+enginearing+college+instagram&u=a1aHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS9tYWRoYWVuZ2luZWVyaW5nY29sbGVnZTIyLw "
+                            target="_blank " class="social-icon instagram ">
+                            <i class="fab fa-instagram "></i>
+                        </a>
+
+                        <a href="https://www.bing.com/ck/a?!&&p=fc46fb496f7b52cc206344fad1762ac3d047c19b5d8ecd320d5b4c6452516686JmltdHM9MTc3MTExMzYwMA&ptn=3&ver=2&hsh=4&fclid=1d2d8576-9702-6e2c-3885-933c96606f25&psq=madha+engineering+college+twiter&u=a1aHR0cHM6Ly90d2l0dGVyLmNvbS9tYWRoYWVuZ2NvbGxlZ2U "
+                            target="_blank " class="social-icon twitter ">
+                            <i class="fab fa-twitter "></i>
+                        </a>
+
+                        <a href="https://www.bing.com/ck/a?!&&p=9fd69044e51733e5228ecce15969748b6aa2354c1a52af7e91f437100a59c9b9JmltdHM9MTc3MTExMzYwMA&ptn=3&ver=2&hsh=4&fclid=1d2d8576-9702-6e2c-3885-933c96606f25&psq=madha+enginearing+college+linkedin+profile&u=a1aHR0cHM6Ly9pbi5saW5rZWRpbi5jb20vaW4vbWFkaGEtZW5naW5lZXJpbmctY29sbGVnZS01YTQyNzYyNWE "
+                            target="_blank " class="social-icon linkedin ">
+                            <i class="fab fa-linkedin-in "></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 ">
+
+            <div class="text-center ">
+                <p class="mb-0 ">&copy; 2026 Dandelion Fest. All Rights Reserved. | Made with ❤️ for Chennai Colleges</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+
+    <!-- COUNTDOWN SCRIPT -->
+    <script>
+        // Countdown to Feb 20, 2026
+        function updateCountdown() {
+            try {
+                console.debug && console.debug('updateCountdown tick');
+                const eventDate = new Date('2026-02-20T09:00:00').getTime();
+                const now = Date.now();
+                const distance = eventDate - now;
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                const el = id => document.getElementById(id);
+
+                if (distance <= 0) {
+                    ['days', 'hours', 'minutes', 'seconds'].forEach(id => {
+                        const e = el(id);
+                        if (e) e.textContent = '00';
+                    });
+                    return;
+                }
+
+                if (el('days')) el('days').textContent = days.toString().padStart(2, '0');
+                if (el('hours')) el('hours').textContent = hours.toString().padStart(2, '0');
+                if (el('minutes')) el('minutes').textContent = minutes.toString().padStart(2, '0');
+                if (el('seconds')) el('seconds').textContent = seconds.toString().padStart(2, '0');
+            } catch (err) {
+                console.error('Countdown error:', err);
+            }
+        }
+
+        // Update every second
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+    <!-- FOOTER -->
+
+    <!-- ABOUT -->
+
+
+    <!-- SOCIAL MEDIA -->
+
+
+
+</body>
+
+</html>
